@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "format:check": "prettier . --check --ignore-path .gitignore",
-    "format:fix": "prettier . --check --ignore-path .gitignore"
+    "format:fix": "prettier . --write --ignore-path .gitignore"
   },
   "dependencies": {
     "react": "^19.1.0",
