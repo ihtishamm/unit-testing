@@ -1,6 +1,6 @@
 export const toKebabCase = (s: string): string => {
-    return s.toLowerCase().replace(/\s/g, '-');
-  };
+  return s.toLowerCase().replace(/\s/g, '-');
+};
 
 export const defaultStatuses = ['Backlog', 'Ready', 'In Progress', 'Completed'];
 
