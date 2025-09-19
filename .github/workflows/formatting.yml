@@ -2,12 +2,12 @@ name: CI
 
 on:
   pull_request:
-    branches: [dev] # run CI on PRs into dev
+    branches: [main]
   push:
-    branches: [dev] # optional: run on direct pushes to dev
+    branches: [main]
 
 jobs:
-  build-and-test:
+  prettier-checking:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -21,8 +21,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run tests
-        run: npm run test
+      - name: Format Check
+        run: npm run format:check
 
-      - name: Run build
-        run: npm run build
+      - name: Format Fix
+        run: npm run format:fix
