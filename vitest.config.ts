@@ -12,7 +12,7 @@ export default defineConfig({
   },
   test: {
     globals: true,
-    setupFiles: path.resolve(__dirname, 'test/setup.ts'),
+    setupFiles: './src/test/setup.ts',
     exclude: [...defaultExclude, '**/*.svelte**'],
     environmentMatchGlobs: [
       ['**/*.test.tsx', 'jsdom'],
