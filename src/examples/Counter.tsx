@@ -21,6 +21,8 @@ export default function Counter({ initial = 0, step = 1 }) {
       <button onClick={reset} id="Reest">
         Reset
       </button>
+      <label htmlFor="inputData">Add the value</label>
+      <input id="inputData" />
     </div>
   );
 }
