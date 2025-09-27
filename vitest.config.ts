@@ -18,5 +18,19 @@ export default defineConfig({
       ['**/*.test.tsx', 'jsdom'],
       ['**/*.component.test.ts', 'jsdom'],
     ],
+    coverage: {
+      include: ['src/**/*'],
+      exclude: [
+        'test/**',
+        'vite.*.ts',
+        '**/*.d.ts',
+        '**/*.test.{ts,tsx,js,jsx}',
+        '**/*.config.*',
+        '**/snapshot-tests/**',
+        '**/*.solution.tsx',
+        '**/coverage/**',
+      ],
+      all: true,
+    },
   },
 });
